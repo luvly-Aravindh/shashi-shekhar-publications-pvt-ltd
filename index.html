@@ -449,6 +449,18 @@ body.video-modal-open{overflow:hidden}
 .brand img{width:28px!important}
 .head .wrap{justify-content:center}
 .logo-card img{height:48px!important;max-width:92%!important}
+/* Header not sticky */
+.head{position:relative!important;top:auto}
+/* Bottom sticky bar: clean two-column layout */
+.sticky .wrap{max-width:720px;margin:0 auto;padding:10px 16px!important;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.sticky .t{display:flex;flex-direction:column;gap:3px;min-width:0;line-height:1.15;text-align:left}
+.sticky .t .nm{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky .t .pr{display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.sticky .t .pr b{font-family:var(--body);font-size:22px;font-weight:900;color:var(--green-deep);display:inline}
+.sticky .t .pr .was{font-size:14px;font-weight:600}
+.sticky .t .pr em{font-style:normal;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#0a3220;background:var(--lime);padding:3px 7px;border-radius:100px}
+.sticky .cta{flex:0 0 auto;width:auto!important;margin:0!important;padding:14px 26px!important;font-size:15px!important;border-radius:100px;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:380px){.sticky .t .pr em{display:none}.sticky .cta{padding:13px 18px!important}}
 .hero h1{font-weight:700;-webkit-text-stroke:1.2px currentColor;paint-order:stroke fill}
 </style></head>
 <body>
@@ -632,7 +644,7 @@ body.video-modal-open{overflow:hidden}
 </div></footer>
 <!-- ===== STICKY ===== -->
 <div aria-hidden="true" class="sticky" id="sticky"><div class="wrap">
-<div class="t"><b>MBA Strategy Call · ₹199</b><small><span class="was">₹999</span> launch offer, slots filling fast</small></div>
+<div class="t"><span class="nm">MBA Strategy Call</span><span class="pr"><b>₹199</b><span class="was">₹999</span><em>Launch offer</em></span></div>
 <a class="cta" data-cta="" href="#book">Book now</a>
 </div></div>
 <script>
